@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Тема 8. Синтаксис async/await і пагінація. Домашня робота</title>
+  <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-D94OL8Qp.js">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-CX4EDM7x.css">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BcaWXmtE.css">
+</head>
+<body>
+
+  <header>
+    <form id="searchForm" class="form">
+      <label for="searchInput" class="sr-only">Search images</label>
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Search images..."
+        autocomplete="off"
+      />
+      <button type="submit" class="search-button">Search</button>
+    </form>
+  </header>
+
+  <main>
+    <ul id="gallery" class="gallery"></ul>
+  </main>
+
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+
+
+</body>
+</html>

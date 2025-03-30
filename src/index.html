@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Тема 8. Синтаксис async/await і пагінація. Домашня робота</title>
+  <link href="./css/styles.css" rel="stylesheet" />
+</head>
+<body>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+  <header>
+    <form id="searchForm" class="form">
+      <label for="searchInput" class="sr-only">Search images</label>
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Search images..."
+        autocomplete="off"
+      />
+      <button type="submit" class="search-button">Search</button>
+    </form>
+  </header>
 
-    <load src="./partials/footer.html" />
+  <main>
+    <ul id="gallery" class="gallery"></ul>
+  </main>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+
+</body>
 </html>
